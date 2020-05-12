@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(https://bootswatch.com/4/slate/bootstrap.min.css);
+
+/* https://bootswatch.com/4/flatly/bootstrap.min.css  flat
+https://bootswatch.com/4/minty/bootstrap.min.css    mint
+https://bootswatch.com/4/united/bootstrap.min.css   orange
+*/
+
+.app-clickable {
+    cursor: pointer;
+}
