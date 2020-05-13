@@ -22,7 +22,6 @@ export class MovieDetailsComponent implements OnInit {
   getDetails(imdbID) {
     this.movieService.getMovieDetails(imdbID).subscribe(resp => {
       this.movieObj = resp;
-      console.log(resp);
     });
   }
 
