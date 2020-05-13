@@ -9,3 +9,8 @@ https://bootswatch.com/4/united/bootstrap.min.css   orange
 .app-clickable {
     cursor: pointer;
 }
+
+html, 
+body {
+  height: 100%;
+}

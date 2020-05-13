@@ -10,15 +10,15 @@ import { ActivatedRoute } from '@angular/router';
 export class MovieListComponent implements OnInit {
 
   movieList: any[];
-  isFound: boolean;
+  isFound: String = '';
   searchString: String = '';
   constructor(private movieService: MoviesService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    this.isFound = false;
+    this.isFound = 'Please wait while loading...';
     this.activatedRoute.queryParams.subscribe(qPArams => {
       this.searchString = qPArams['q'];
-      this.movieService.searchMovies(this.searchString).subscribe(
+      this.movieService.searchMovies({ params: { s: this.searchString } }).subscribe(
         resp => {
 
           this.movieList = resp.Search;
@@ -26,8 +26,11 @@ export class MovieListComponent implements OnInit {
             this.movieList.sort((a, b) => {
               return parseInt(a.Year) < parseInt(b.Year) ? 1 : -1;
             });
+            if (this.movieList.length > 9) {
+              this.movieList.splice( 9);
+            }
           } else {
-            this.isFound = true;
+            this.isFound = 'No results found for \"' + this.searchString + '\"';
           }
         }
       );

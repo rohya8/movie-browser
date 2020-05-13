@@ -11,7 +11,8 @@ export class MoviesService {
   constructor(private http: HttpClient) { }
 
   searchMovies(searchTerm): Observable<any> {
-    return this.http.get(baseUrl, { params: { s: searchTerm } });
+    // return this.http.get(baseUrl, { params: { s: searchTerm } });
+    return this.http.get(baseUrl, searchTerm);
   }
 
   getMovieDetails(imdbID): Observable<any> {

@@ -1,0 +1,23 @@
+/* .footer{  
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+} */
+
+
+
+.footer {
+   /*  position: fixed;
+    text-align: right;
+    margin-right: 5px; */
+    min-height: 50px; 
+    flex-grow: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    padding-right: 10px; 
+    padding-top: 10px;
+ }

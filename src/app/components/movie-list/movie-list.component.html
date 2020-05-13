@@ -13,6 +13,6 @@
     </div>
   </div>
 </div>
-<div class="row" *ngIf="isFound">
-  <h3 class="text-center text-info">No results found for "{{searchString}}"</h3>
+<div class="row" *ngIf="!movieList">
+  <h3 class="text-center text-info">{{isFound}}</h3>
 </div>

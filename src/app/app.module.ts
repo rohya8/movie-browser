@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { FooterComponent } from './components/footer/footer.component';
 
 const appRoutes: Routes = [
   {
@@ -50,7 +51,8 @@ const appRoutes: Routes = [
     HomeComponent,
     HeaderComponent,
     MovieListComponent,
-    MovieDetailsComponent
+    MovieDetailsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
