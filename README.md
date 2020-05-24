@@ -5,11 +5,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Technologies used 
 
-- Angular (https://angular.io/) 
-- Firebase (https://firebase.google.com/)
+- Angular https://angular.io/
+- Firebase https://firebase.google.com/
 
 ## API Used
-- OMDb API (http://www.omdbapi.com/)
+- OMDb API http://www.omdbapi.com/
 
 ## Development server
 
