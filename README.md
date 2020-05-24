@@ -1,7 +1,15 @@
 # SearchMyMovie 
-[Live Demo](https://movybrowser.firebaseapp.com/home)  
+[Demo](https://movybrowser.firebaseapp.com/home)  
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.9.
+
+## Technologies used 
+
+- [Angular] (https://angular.io/) 
+- [Firebase] (https://firebase.google.com/)
+
+## API Used
+- [OMDb API] (http://www.omdbapi.com/)
 
 ## Development server
 
